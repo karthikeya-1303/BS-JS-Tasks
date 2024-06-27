@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Task 2</title>
+</head>
+<body style="background-color: darksalmon;">
+    <h1>Arranging String in alphabetical order</h1>
+    <label for="string">Enter the string: </label>
+    <input type="text" id="strin"><br>
+    <button type="button" onclick="alphabetize()">Submit</button>
+    <h2>Final alphabetically ordered string</h2>
+    <p id="fstr"></p>
+    <script>
+        function alphabetize() {
+            var str = document.getElementById("strin").value;
+            var output = str.split('').sort().join('');
+            document.getElementById("fstr").innerHTML = output;
+}
+    </script>
+</body>
+</html>
